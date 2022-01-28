@@ -5,6 +5,8 @@
 //  Case: power on with residual RF disabled, eg. a logger that only woke with wifi infrequently.
 //  Low power/time cost if RF enabled.
 //  use: if (was_WAKE_RF_DISABLED()) { // enabled, carry on }
+//  inspired by https://www.bakke.online/index.php/2017/05/22/reducing-wifi-power-consumption-on-esp8266-part-3/
+//      https://github.com/esp8266/Arduino/issues/3072#issuecomment-741524721
 //
 bool was_WAKE_RF_DISABLED ()
 {
