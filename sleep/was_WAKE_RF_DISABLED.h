@@ -1,5 +1,7 @@
 #define MS Serial.print(millis()); Serial.write(' ');
 
+// Further research required, have seen it not reenable RF. Look into sniffing UART1 TX FIFO hardware buffer.
+
 // A method to detect if awake with RFMode inadvertently WAKE_RF_DISABLED (8266 core 3.0.2),
 //  and enable RF 'on-the-fly' without another deepSleep call looking for a flag, but with forceSleepBegin/forceSleepWake.
 //  That combo was consuming ~350ms, or about 50% longer than a well configured built-in auto connect (sdk).
